@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=WordGen
+comment0.text=\n\ WordGen\n\ \n\ Creates\ SequenceTables\ to\ store\ input\ text\ information.\ Reads\ in\ text\ file\ dictionary.\ Starts\ command\ line\ loop\n\ which\ prompts\ the\ user\ for\ input,\ one\ word\ at\ a\ time,\ and\ gives\ the\ user\ word\ suggestions\ based\ on\ what\ has\ \n\ already\ been\ typed,\ what\ the\ program\ has\ already\ encountered\ in\ text\ files,\ and\ the\ part\ of\ speech\ of\ the\ previous\ word.\ \n\ \n\ @author\ Ana\u00EFs\ Sarrazin\ &\ Jack\ O'Connor\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=fileNames\ tableNames\ genericWords
+comment2.target=void\ readInTextFiles(java.util.List,\ java.util.List,\ java.lang.String)
+comment2.text=\n\ readInTextFiles\n\ Reads\ the\ given\ text\ files\ into\ the\ corresponding\ SequenceTables\n\ \n\ @param\ fileNames\ -\ names\ of\ the\ files\ to\ be\ read\ in\ \n\ @param\ tableNames\ -\ list\ of\ Sequence\ tables\ to\ read\ the\ text\ files\ into\ \n\ @genericWords\ -\ string\ of\ generic\ words\ to\ be\ put\ into\ SequenceTable\ generic\ words\ set\n
+comment3.params=word\ dictionary\ tableList
+comment3.target=java.lang.String\ findTopic(java.lang.String,\ java.util.Map,\ java.util.List)
+comment3.text=\n\ findTopic\ \n\ Attempts\ to\ detect\ if\ a\ word\ is\ indicative\ of\ a\ setence\ topic\ and\ returns\ the\ topic\ if\ the\ topic\ is\ detected\n\ otherwise\ returns\ "generic"\n\ \n\ @param\ word\ the\ String\ of\ the\ word\ in\ question\ \n\ @param\ dictionary\ the\ Map\ containing\ the\ part\ of\ speech\ information\ \n\ @param\ tableList\ the\ list\ of\ SequenceTables\n\ \n\ @return\ String\ representing\ the\ topic\ (park,\ ocean,\ store)\ or\ generic\ if\ not\ indicative\ of\ a\ topic\ \n
+comment4.params=word\ dictionary
+comment4.target=java.util.List\ genericSuggestions(java.lang.String,\ java.util.Map)
+comment4.text=\n\ genericSuggestions\n\ returns\ generic\ word\ selections\ because\ a\ topic\ for\ specific\ suggestions\ has\ not\ been\ selected\ yet\ \n\ \n\ @param\ word\ the\ String\ of\ the\ word\ in\ question\n\ @param\ dictionary\ the\ Map\ storing\ the\ part\ of\ speech\ information\ \n\ \n\ @return\ List\ of\ strings\ with\ generic\ suggestions\ pertaining\ to\ the\ part\ of\ speech\ of\ the\ word\n
+comment5.params=
+comment5.target=java.util.HashMap\ scanDictionary()
+comment5.text=\n\ scanDictionary\n\ scans\ the\ given\ file\ and\ records\ the\ word\ as\ the\ key\ and\ the\ part\ of\ speech\ as\ the\ value\ \n\ \n\ @return\ HashMap\ representing\ dictionary\ part\ of\ speech\ information\ \n
+numComments=6

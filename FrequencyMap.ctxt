@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=FrequencyMap
+comment0.text=\n\ FrequencyMap\n\ \n\ \ 1)\ Makes\ a\ FrequencyMap\ object\ that\ is\ a\ Map\ of\ words\ and\ integers.\n\ \ 2)\ Adds\ words\ to\ the\ FrequencyMap\ objects.\n\ \ 3)\ Records\ the\ number\ of\ times\ a\ word\ follows\ a\ certain\ string\ sequence.\n\ \ 4)\ Creates\ list\ of\ words\ to\ return\ as\ suggestions\ for\ a\ particular\ word\ based\ on\ what\ \n\ \ has\ been\ encountered\ through\ the\ text\ file\ that\ was\ read\ in.\ \n\ \ \n\ \ @author\ Ana\u00EFs\ Sarrazin\ &\ Jack\ O'Connor\n\ \n
+comment1.params=
+comment1.target=FrequencyMap()
+comment1.text=\n\ Constructor\ method\ that\ creates\ new\ FrequencyMap\ objects\ which\ will\ map\ words\ to\ the\ frequencies\ \n\ in\ which\ they\ occur.\ Uses\ the\ HashMap\ implementation\ to\ do\ this.\n
+comment2.params=word
+comment2.target=void\ addWord(java.lang.String)
+comment2.text=\n\ addWord\n\ Adds\ words\ to\ FrequencyMap\ objects\ in\ order\ to\ update\ the\ frequencies\ in\ which\ the\ words\ occur\ \n\ after\ certain\ String\ sequences.\n\ \n\ @param\ word\ a\ word\ representing\ the\ specific\ key\ in\ the\ FrequencyMap\n\ \n
+comment3.params=lastWord\ dictionary
+comment3.target=java.util.List\ pickNewWords(java.lang.String,\ java.util.HashMap)
+comment3.text=\n\ pickNewWords\n\ returns\ a\ list\ of\ word\ suggestions\ based\ on\ what\ words\ have\ been\ recorded\ as\ following\ \n\ the\ particular\ word\ that\ is\ given.\ \n\ \n\ @param\ lastWord\ String\ representing\ the\ word\ in\ question\n\ @param\ dictionary\ Map\ representing\ the\ part\ of\ speech\ information\n\ @return\ List\ with\ the\ word\ suggestions\ in\ it\n\ \n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment4.text=\n\ Creates\ string\ representations\ of\ the\ FrequencyMap\ objects\n\ \n\ @returns\ a\ string\ containing\ word\ keys\ associated\ with\ integer\ frequencies\n
+numComments=5
